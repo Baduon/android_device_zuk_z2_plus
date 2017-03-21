@@ -112,7 +112,11 @@ QCOM_BT_USE_SMD_TTY := true
 # Camera
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 USE_DEVICE_SPECIFIC_CAMERA := true
+<<<<<<< HEAD
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+=======
+TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES := true
+>>>>>>> b559cbe... Camera use native handles
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
