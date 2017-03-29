@@ -101,8 +101,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
-    libaudioroute \
-    libbthost_if \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -142,10 +140,7 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8996 \
     memtrack.msm8996 \
     liboverlay \
-    
-# Doze mode
-PRODUCT_PACKAGES += \
-    ZukDoze
+    libtinyxml
 
 # Fingerprint
 PRODUCT_PACKAGES += \
