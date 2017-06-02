@@ -20,8 +20,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from z2_plus device
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
-# Inherit some common Citrus CAF stuff.
-$(call inherit-product, vendor/citrus/common.mk)
+# Inherit some common VIPER stuff.
+$(call inherit-product, vendor/viper/config/common_full_phone.mk)
 
 PRODUCT_NAME := citrus_z2_plus
 PRODUCT_DEVICE := z2_plus
@@ -36,3 +36,11 @@ TARGET_VENDOR_DEVICE_NAME := z2_plus
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=z2_plus PRODUCT_NAME=z2_plus
 
 TARGET_VENDOR := zuk
+
+# Support Official
+export VIPER_BUILD_TYPE=OFFICIAL
+
+# Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT="ZUK/z2_plus/z2_plus:6.0.1/MMB29M/1.9.077_160617:user/release-keys" \
+    PRIVATE_BUILD_DESC="z2_plus-user 6.0.1 MMB29M 1.9.077_160617 release-keys"
